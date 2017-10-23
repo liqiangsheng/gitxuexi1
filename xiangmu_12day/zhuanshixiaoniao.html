@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>钻石小鸟</title>
+		<link rel="stylesheet" type="text/css" href="css公用资料/reset .css"/>
+		<link rel="stylesheet" type="text/css" href="style1.css"/>
+		
+		<script src="ajax_fengzhuang.js"></script>
+		<script src="js公用资料/move运动封装.js"></script>
+		<script src="js公用资料/css获取style样式.js"></script>
+		<script src="js/jquery-1.12.3.js"></script>
+		<script src="js/zuanshixiaoiao.js"></script>
+		<script src="lunbotu.js"></script>
+	
+	</head>
+	<body>
+		<!--头部-->
+		<div class="head" id="head">
+			<div class="head_left">
+				<p>欢迎进入钻石小鸟官网</p>
+				<a id="denglu" href="denglu.html">登录</a>
+				<a id="zhuce" href="zhuce.html">注册</a>
+			</div>
+			<div class="head_right">
+				<ul id="list">
+					<li id="gouwu">
+						<img id="gouwuche" src="images/header_box.png"/>
+						购物车
+						<span>0</span>
+						<img id="xiangxia1" src="images/icon_drop.png"/>
+						<div id="shangpin">
+							购物车暂无商品
+							<span></span>
+						</div>
+					</li>
+					<li>我的订单</li>
+					<li id="niao">
+						我的鸟巢
+						<img id="xiangxia2" src="images/icon_drop.png"/>
+						<div id="niaocao">
+							<a href="#">订单查询</a><br />
+							<a href="#">售后服务</a></br/>
+							<a href="#">积分换礼</a>
+						</div>
+					</li>
+					<li>钻石课堂</li>
+					<li id="guanwang">
+						手机官网
+						<div id="guanw">
+							<img src="images/code_wechat.jpg" />
+							<span></span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+    <!--logo-->
+	    <div class="logo">
+	    	<div class="logo_left">
+	    		<img src="images/h1.png" />
+	    	</div>
+	    	<div class="logo_right">
+	    		<input id="seach" type="text" placeholder="戒托" />
+	    		<input id="laidian" type="button" value="来店预约" />
+	    		<img src="images/shousuo.jpg" />
+	    	</div>
+	    </div>
+	  
+	  	
+	  	<!--nuv-->
+	  	<div class="nuv">
+	  		<ul id="list3" class="list3">
+	  			<li id="active">首页</li>
+	  			<li class="li1">钻石</li>
+	  			<li>婚戒</li>
+	  			<li>对戒</li>
+	  			<li>配饰</li>
+	  			<li>定制</li>
+	  			<li>体验中心</li>
+	  		</ul>
+	  		<ul id="list4" class="list4">
+	  			<li>品牌故事</li>
+	  			<li>鸟巢论坛</li>
+	  			
+	  		</ul>
+	  		<!--隐藏部分-->
+	  		<div class="box2">
+	  			
+	  			<div id="box2_1">
+	  				<div>
+	  					<h2><a href="#">钻石</a></h2>
+	  					<a href="#">探索全部钻石</a>
+	  					<a href="#">30分颗钻</a>
+	  					<a href="#">50分颗钻</a>
+	  					<a href="#">70分颗钻</a>
+	  					<a href="#">克拉钻</a>
+	  					<a href="#">海淘钻石 立省15%</a>
+	  					<a href="#">北极光钻石</a>
+	  					<a href="#">FireCushion钻石</a>
+	  				</div>
+	  				
+                    <div>
+                    	<a href="#" id="a">圆形</a>
+                    	<a href="#">公主方</a>
+                    	<a href="#">祖母绿</a>
+                    	<a href="#">橄榄形</a>
+                    	<a href="#">椭圆形</a>
+                    	<a href="#">梨形</a>
+                    	<a href="#">心形</a>
+                    	
+                    </div>
+
+                   <div>
+                   	   <a href="#" id="a">定制一款钻戒</a>
+                    	<a href="#">定制一款吊坠</a>
+                    	<a href="#">钻石4C知识</a>
+                    	<a href="#">钻石其他参数如何查看</a>
+                    	<a href="#">钻石证书知识</a>
+                    	<a href="#">甄选特惠裸钻专区</a>
+                   </div>
+
+                  <div>
+                  	<a href="#"><img src="images/daohang1.jpg"/></a>
+                  </div>
+
+
+	  			</div>
+	  			<div id="box2_2">
+			  				<div>
+			  					<h2><a href="#">婚戒</a></h2>
+			  					<a href="#">探索全部婚戒</a>
+			  					<a href="#">简约独钻</a>
+			  					<a href="#">奢华群镶</a>
+			  					<a href="#">克拉钻戒</a>
+			  					<a href="#">大气男戒</a>
+			  					<a href="#">纪念戒/花戒</a>
+			  					<a href="#">戒托款式</a>
+			  					<a href="#">人气热销</a>
+			  				</div>
+			  				
+		                    <div>
+		                    	<a href="#" id="a">TRIMARK系列</a>
+		                    	<a href="#">北极光系列</a>
+		                    	<a href="#">LADY NEW YORK</a>
+		                    	<a href="#">心心相印系列</a>
+		                    	<a href="#">钟情蕾丝系列</a>
+		                    	<a href="#">宠爱系列</a>
+		                    	<a href="#">玲珑系列</a>
+		                    	<a href="#">幸福三指环</a>
+		                    	
+		                   </div>
+		                    
+		                   <div>
+		                   	   <a href="#" id="a">如何测量手寸</a>
+		                    	<a href="#">如何挑选适合的戒指款式</a>
+		                    	<a href="#">如何选购戒托材质</a>
+		                    	<a href="#">匠心工艺</a>
+		                    	
+		                   </div>
+		
+		                  <div>
+		                  	<a href="#"><img src="images/daohang2.jpg"/></a>
+		                  </div>
+
+	  			</div>
+	  			<div id="box2_3">
+	  				      <div>
+			  					<h2><a href="#">对戒</a></h2>
+			  					<a href="#">探索全部对戒</a>
+			  					<a href="#">18K金对戒</a>
+			  					<a href="#">铂金对戒</a>
+			  					<a href="#">男款对戒</a>
+			  					<a href="#">女款对戒</a>
+			  					<a href="#">热销款式</a>
+			  					
+			  				</div>
+			  				
+		                    <div>
+		                    	
+		                    	<a href="#" id="a">两人一世戒系列</a>
+		                    	<a href="#">YOU&ME系列</a>
+		                    	<a href="#">皇冠系列</a>
+		                    	<a href="#">心声系列</a>
+	
+ 	
+		                    </div>
+		
+		                   <div>
+		                   	   <a href="#" id="a">对戒的戴法和意义</a>
+		                    	<a href="#">对戒刻字内容</a>
+		                    	
+		                   </div>
+		
+		                  <div>
+		                  	<a href="#"><img src="images/daohang3.jpg"/></a>
+		                  </div>
+	  			</div>
+	  			<div id="box2_4">
+	  				       <div>
+			  					<h2><a href="#">配饰</a></h2>
+			  					<a href="#">探索全部配饰</a>
+			  					<a href="#">挂坠</a>
+			  					<a href="#">项链坠</a>
+			  					<a href="#">耳钉</a>
+			  					<a href="#">手链</a>
+			  					<a href="#">手镯</a>
+			  					<a href="#">项链</a>
+			  					<a href="#">人气TOP</a>
+			  				</div>
+	
+		                    <div>
+		                    	<a href="#" id="a">珍珠系列</a>
+		                    	<a href="#">BLINK系列</a>
+		                    	<a href="#">闪耀芭比系列</a>
+		                    	<a href="#">钟情蕾丝系列</a>
+		                    	<a href="#">纪念戒系列</a>
+		                    	<a href="#">醉玲珑系列</a>
+		                    	<a href="#">微光系列</a>
+		                    	
+		                    </div>
+		
+		                   <div>
+		                   	   <a href="#" id="a">18k金的保养</a>
+		                    	<a href="#">铂金的保养</a>
+		                    	<a href="#">钻石4C知识</a>
+		                    	<a href="#">如何选购项链</a>
+		                    	<a href="#">如何选购项链</a>
+		                    	<a href="#">根据脸型来挑选耳环</a>
+		                    	<a href="#">手链的佩戴方法</a>
+		                   </div>
+		
+		                  <div>
+		                  	<a href="#"><img src="images/daohang4.jpg"/></a>
+		                  </div>
+	  			</div>
+	  			<div id="box2_5">
+	  				      <div>
+			  					<h2><a href="#">定制</a></h2>
+			  					<a href="#">探索全部定制</a>
+			  					<a href="#">从裸钻开始定制</a>
+			  					<a href="#">从戒托开始定制</a>
+			  					<a href="#">从吊坠托开始定制</a>
+			  					<a href="#">私人定制服务</a>
+			  					
+			  				</div>
+	
+
+		                    <div>
+		                    	
+		                    	<a href="#" id="a">经典直臂款戒托</a>
+		                    	<a href="#">简约扭臂款戒托</a>
+		                    	<a href="#">异型钻款戒托</a>
+		                    	<a href="#">北极光款戒托</a>
+		                    	<a href="#">火玫瑰款戒托</a>
+		                    	
+		                    </div>
+		
+		                   <div>
+		                   	   <a href="#" id="a">钻石4C</a>
+		                    	<a href="#">戒托款式</a>
+		                    	<a href="#">戒托材质</a>
+		                    	<a href="#">手寸测量</a>
+		                    	
+		                   </div>
+		
+		                  <div>
+		                  	<a href="#"><img src="images/daohang5.jpg"/></a>
+		                  </div>
+	  			</div>
+	  			<div id="box2_6">
+	  				     <div>
+			  					<h2><a href="#">体验中心</a></h2>
+			  					<a href="#">探索全部体验中心</a>
+			  					<a href="#">上海体验中心</a>
+			  					<a href="#">北京体验中心</a>
+			  					<a href="#">广州体验中心</a>
+			  					<a href="#">杭州体验中心</a>
+			  					<a href="#">成都体验中心</a>
+			  					<a href="#">北极光钻石</a>
+			  					<a href="#">宿迁体验中心</a>
+			  					<a href="#">南昌体验中心</a>
+			  				</div>
+
+		                    <div>
+		                    	<a href="#" id="a">南京体验中心</a>
+		                    	<a href="#">合肥体验中心</a>
+		                    	<a href="#">天津体验中心</a>
+		                    	<a href="#">宁波体验中心</a>
+		                    	<a href="#">盐城体验中心</a>
+		                    	<a href="#">常州体验中心</a>
+		                    	<a href="#">烟台体验中心</a>
+		                    	<a href="#">丽水体验中心</a>
+		                    	
+		                    </div>
+		
+		                   <div>
+		                   	   <a href="#" id="a">苏州体验中心</a>
+		                    	<a href="#">武汉体验中心</a>
+		                    	<a href="#">重庆体验中心</a>
+		                    	<a href="#">西安体验中心</a>
+		                    	<a href="#">济宁体验中心</a>
+		                    	<a href="#">郑州体验中心</a>
+		                    	<a href="#">盐城金鹰体验中心</a>
+		                   </div>
+		
+		                  <div>
+		                  	<a href="#"><img src="images/daohang6.jpg"/></a>
+		                  </div>
+	  				
+	  				
+	  				
+	  			</div>
+	  		</div>
+	  	</div>
+	  	
+	  	
+	  <!--轮播-->
+        <div class="lunbo" id="lunbo">
+
+        	<ul id="list1">
+        		
+        	</ul>
+        	<ul id="list2">
+        		
+        	</ul>
+        	<div id="prev"><img src="images/prev_54.png"/></div>
+        	<div id="next"><img src="images/next_54.png"/></div>
+        </div>
+ 
+ 
+      <!--挑选-->
+       <div class="tiaoxuan clear" id="tiaoxuan">
+
+	      	<div class="tiaoxuan_left clear">
+	      		<h2>设计订婚戒指</h2>
+	      		<div id="tiaoxuan_box" class="tiaoxuan_box">
+	      		<div class="tiaoxuan_div1"></div>
+	      		<div class="tiaoxuan_div2"></div>
+	      		<div class="tiaoxuan_div3 active1"></div>
+	      		</div>
+	      		<a href="#">从挑选钻石开始</a></br>
+	      		<a href="#">从挑选款式开始</a>
+	      		
+	      	</div>
+	      	
+	      	<div class="tiaoxuan_right">
+	      		<a href="#"><img src="images/3170932645eb6b05cc25791d84bd6c5c.jpg"/></a>
+	      	</div>
+      	
+      </div>
+
+	  <!--系列产品-->
+	 <div class="changpin ">
+	  	<div class="changpin_top">系列产品</div>
+	  	<ul id="list5">
+	  		<li class="active3">推荐</li>
+	  		<li>钻石</li>
+	  		<li>婚戒</li>
+	  		<li>对戒</li>
+	  		<li>配饰</li>
+	  	</ul>
+	  	
+	  	<div id="list5_box" class="list5_box">
+	  			<div class="active2 list5_div1">
+		  			<a href="#"><img src="images/7363ee552e8b33a6b788246d6e90325c.jpg"/></a>
+		  			<a href="#"><img src="images/8f19ad2ef9d2bd8dd5333bf4fb5a07f5.jpg"/></a>
+		  			<a href="#"><img src="images/78caf7f5aed277a7064b39d3b1f592b2.jpg"/></a>
+		  		</div>
+		  		<div class="list5_div2">
+		  			<a href="#"><img src="images/cc1dc97520b45b73a984125d82e222cf.jpg"/></a>
+		  			<a href="#"><img src="images/ca4b94bdf415e4052f093b4cc3c9ac31.jpg"/></a>
+		  			<a href="#"><img src="images/4854cc344e68129ffa7d3eedf35cf050.jpg"/></a>
+		  		</div>
+		  		<div class="list5_div3">
+		  			<a href="#"><img src="images/9e59044fe2e71df5f6ec12b52cac908d.jpg"/></a>
+		  			<a href="#"><img src="images/c60c8bc3ffcfced1b09b4c4769976c2a.jpg"/></a>
+		  			<a href="#"><img src="images/6219bd593b900736a0559c35c2f187f6.jpg"/></a>
+		  		</div>
+		  		<div  class="list5_div4">
+		  			<a href="#"><img src="images/66458677312a3fbd02178328d9e35377.jpg"/></a>
+		  			<a href="#"><img src="images/3904d3a60fa75720464ccee21aee1321.jpg"/></a>
+		  			<a href="#"><img src="images/7be7f587066f9bd18125cdd6cdfd15d7.jpg"/></a>
+		  		</div>
+		  		<div  class="list5_div5">
+		  			<a href="#"><img src="images/ae82a428ba019c7617222e66f65cae02.jpg"/></a>
+		  			<a href="#"><img src="images/275ee9023ed62dca030ee3b4a504d5ca.jpg"/></a>
+		  			<a href="#"><img src="images/b75113f1a17de0c9f4f73f3a29b74a6f.jpg"/></a>
+		  		</div>
+	  		</div>
+	  	
+	  	
+	</div>
+	
+	 
+	 <!--婚戒推荐全球美钻-->
+	
+	 <div class="quanqiu" id="quanqiu">
+	 	<div class="quanqiu_top">婚戒推荐&全球美钻</div>
+	 	
+	 	<div class="quanqiu_center" id="quanqiu_center">
+	 		<ul id="list6">
+	 		<a href="#">
+	 			<li>
+	 				<img src="images/7f130bb6f769b7f79f4f6db1cb62e3f0.jpg" />
+	 			</li>
+	 		</a>
+	 		<a href="#">
+	 			<li>
+	 				<img src="images/95c30f0175335b0dbff907187e461e60.jpg" />
+	 			</li>
+	 		</a>
+	 		<a href="#">
+	 			<li>
+	 				<img src="images/85b8cf7d63d466da732336d3a4298575.jpg	" />
+	 			</li>
+	 		</a>
+	 		<a href="#">
+	 			<li>
+	 				<img src="images/0249a7c120b6c632a5533e2441dbbf22.jpg" />
+	 			</li>
+	 		</a>
+	 		<a href="#">
+	 			<li>
+	 				<img src="images/14070843d4417d3adcccf83126d3cf8e.jpg" />
+	 			</li>
+	 		</a>
+	 		<a href="#">
+	 			<li>
+	 				<img src="images/a38a0a41055ed99fc4ac7abf38378f57.jpg" />
+	 			</li>
+	 		</a>
+	 		<a href="#">
+	 			<li>
+	 				<img src="images/bca21b60ff198c8cd89cc242428c3f90.jpg" />
+	 			</li>
+	 		</a>
+	 	</ul>
+	 	
+	 	<div id="leftye" style="background: url(images/zuo_01.png) no-repeat left;width: 37px;height: 48px;"></div>
+	 	<div id="rightye"  style="background: url(images/zuo_03.png) no-repeat left;width: 37px;height:           48px;"></div>
+	 	
+	 	
+	 	
+	 	</div>
+	 	
+	 </div>
+	
+	
+	 <!-- 商品形状-->
+	<div class="xingzhuang" id="xingzhuang">
+		<div class="xingzhuang_top">
+			
+			<dl>
+				<a href="#" title="圆形">
+				<dt><i class="iconfont">&#xe63a;</i></dt>
+				<dd>Round</dd>
+				</a>
+				
+				<a href="#" title="祖母绿">
+				<dt><i class="iconfont">&#xe63b;</i></dt>
+				<dd>Princess</dd>
+				</a>
+				
+				<a href="#" title="心形">
+				<dt><i class="iconfont">&#xe636;</i></dt>
+				<dd>cushion</dd>
+				</a>
+				
+				<a href="#" title="椭圆形">
+				<dt><i class="iconfont">&#xe634;</i></dt>
+				<dd>Emerald</dd>
+				</a>
+				
+				<a href="#" title="三角形">
+				<dt><i class="iconfont">&#xe631;</i></dt>
+				<dd>Radiant</dd>
+				</a>
+				
+				<a href="#" title="梨形">
+				<dt><i class="iconfont">&#xe62c;</i></dt>
+				<dd>Oval</dd>
+				</a>
+				
+				<a href="#" title="雷迪恩">
+				<dt><i class="iconfont">&#xe62b;</i></dt>
+				<dd>Pear</dd>
+				</a>
+				
+				<a href="#" title="公主方">
+				<dt><i class="iconfont">&#xe629;</i></dt>
+				<dd>Heart</dd>
+				</a>
+				
+				<a href="#" title="垫形">
+				<dt><i class="iconfont">&#xe625;</i></dt>
+				<dd>Trillion</dd>
+				</a>
+			</dl>
+			
+		</div>
+	</div>
+	
+	
+	
+	
+<!-- 商品列表-->
+       <div class="liebiao clear">
+       	    
+<!--       	    
+       	    <div><img src="images/hunjie5.jpg"/>
+       	    	<p>拥暖Ⅱ</p>
+       	    	<strong>￥10530</strong><br />
+       	    	<span>售出4904</span>
+       	    	<span>评论243</span>
+       	    </div>
+       	    <div><img src="images/hunjie6.jpg"/>
+       	    	<p>永恒之约Ⅱ</p>
+       	    	<strong>￥9140</strong><br />
+       	    	<span>售出4904</span>
+       	    	<span>评论243</span>
+       	    </div>
+       	    <div><img src="images/hunjie7.jpg"/>
+       	    	<p>北极光森林女王Ⅱ</p>
+       	    	<strong>￥29600</strong><br /><br />
+       	    	<span>售出4904</span>
+       	    	<span>评论243</span>
+       	    </div>
+       	   	<div><img src="images/hunjie8.jpg"/>
+       	   		<p>北极光月光女王Ⅱ</p>
+       	   		<strong>￥32500</strong><br />
+       	   		<span>售出4904</span>
+       	   		<span>评论243</span>
+       	   	</div>
+       	    <div><img src="images/hunjie9.jpg"/>
+       	    	<p>Energy能量 </p>
+       	    	<strong>￥19900</strong><br />
+       	    	<span>售出4904</span>
+       	    	<span>评论243</span>
+       	    </div>
+       	    <div><img src="images/hunjie10.jpg"/>
+       	    	<p>天使之恋</p>
+       	    	<strong>￥15300</strong><br />
+       	    	<span>售出4904</span>
+       	    	<span>评论243</span>
+       	    </div>
+       	    <div><img src="images/hunjie11.jpg"/>
+       	    	<p>倾心</p>
+       	    	<strong>￥8900</strong><br />
+       	    	<span>售出4904</span>
+       	    	<span>评论243</span>
+       	    </div>
+       	    <div><img src="images/hunjie12.jpg"/>
+       	    	<p>永恒之约</p>
+       	    	<strong>￥27500</strong><br />
+       	    	<span>售出4904</span>
+       	    	<span>评论243</span>
+       	    </div>
+       	    <div><img src="images/hunjie13.jpg"/>
+       	    	<p>悦纯Ⅱ</p>
+       	    	<strong>￥9440</strong><br />
+       	    	<span>售出4904</span>
+       	    	<span>评论243</span>
+       	    </div>
+       	   	<div><img src="images/hunjie14.jpg"/>
+       	   		<p>炫动Ⅱ</p>
+       	   		<strong>￥8810</strong><br />
+       	   		<span>售出4904</span>
+       	   		<span>评论243</span>
+       	   	</div>
+       	    <div><img src="images/hunjie15.jpg"/>
+       	    	<p>丝缠</p>
+       	    	<strong>￥3250</strong><br />
+       	    	<span>售出4904</span>
+       	    	<span>评论243</span>
+       	    </div>
+       	    <div><img src="images/hunjie16.jpg"/>
+       	    	<p>典爱</p>
+       	    	<strong>￥10500</strong><br />
+       	    	<span>售出4904</span>
+       	    	<span>评论243</span>
+       	    </div>-->
+       	    
+       </div>
+
+	
+	
+	
+	
+	
+	
+	<!--广告-->
+	<div class="guangao" id="guangao">
+		<div class="guangao_div1" id="guangao_div1"></div>
+		<div class="guangao_div2" id="guangao_div2"></div>
+		<div class="guangao_div3" id="guangao_div3"></div>
+	</div>
+	
+	<!--分割线-->
+	<div class="xian"></div>
+	
+	<!--城市-->
+	<div class="city">
+		
+			<a href="">上海</a><span>/</span>
+			<a href="">北京</a><span>/</span>
+			<a href="">广州</a><span>/</span>
+			<a href="">成都</a><span>/</span>
+			<a href="">杭州</a><span>/</span>
+			<a href="">南京</a><span>/</span>
+			<a href="">宁波</a><span>/</span>
+			<a href="">合肥</a><span>/</span>
+			<a href="">天津</a><span>/</span>
+			<a href="">西安</a><span>/</span>
+			<a href="">郑州</a><span>/</span>
+			<a href="">武汉</a><span>/</span>
+			<a href="">重庆</a><span>/</span>
+			<a href="">盐城</a><span>/</span>
+			<a href="">济宁</a><span>/</span>
+			<a href="">临沂</a><span>/</span>
+			<a href="">常州</a><span>/</span>
+			<a href="">盐城金鹰</a><span>/</span>
+			<a href="">丽水</a><span>/</span>
+			<a href="">苏州</a><span>/</span>
+			<a href="">烟台</a><span>/</span>
+			<a href="">宿迁</a><span>/</span>
+			<a href="">南昌</a><span>/</span>
+			
+		
+	</div>
+	
+	
+	<!--地址-->
+	
+		<div class="dizhi" id="dizhi">
+			<div id="dizhi_left">
+				<div id="dizhi_left1" class="active4"></div>
+				<div id="dizhi_left2"></div>
+				<div id="dizhi_left3"></div>
+				<div id="dizhi_left4"></div>
+				
+				<section id="box8">
+					<section class="active5"></section>
+					<section></section>
+					<section></section>
+					<section></section>
+				</section>
+			</div>
+			<div id="dizhi_right">
+				<h2>上海旗舰体验中心</h2>
+				<span></span>
+				<p>
+					上海市黄浦区南京东路299号宏伊广场8层<br/>
+					周一至周四 10:30-20:00        周五 10:30-20:30<br/>
+					周六至周日 10:00-20:30<br/>
+					咨询电话  021-33665178
+				</p>
+				<input id="mianfei" type="text" placeholder="免费发送地址到手机" /><br/>
+				<input id="bnt3" type="button" value="在线预约进店" />
+			</div>
+		</div>
+	
+	<!--咨询-->
+	<div class="zixun" id="zixun">
+		<div class="zixun_left" id="zixun_left">
+			<div class="zixun_left1">
+				<h3>资讯动态</h3>
+				<ul>
+					<li>
+						<a href="#">钻石小鸟携《时尚COSMO》解读真爱...</a>
+					</li>
+					<li>
+						<a href="#">《醉玲珑》浓墨登陆东方卫视 钻石小鸟...</a>
+					</li>
+					<li>
+						<a href="#">钻石小鸟合肥体验中心迎周年盛典 感恩...</a>
+					</li>
+					<li>
+						<a href="#">钻石小鸟成都体验中心九周年店庆 分享...</a>
+					</li>
+					<li>
+						<a href="#">钻石小鸟高校巡礼季 谱写闪耀的青春纪...</a>
+					</li>
+					<li>
+						<a href="#">钻石小鸟携手上海首饰设计协会 闪耀珠...</a>
+					</li>
+				</ul>
+				<span><a href="#">查看全部</a></span>
+			</div>
+			<div class="zixun_left2">
+				<h3>钻石课堂</h3>
+				<ul>
+					<li>
+						<a href="#">钻石荧光知识普及</a>
+					</li>
+					<li>
+						<a href="#">成功率最高的创意表白方式</a>
+					</li>
+					<li>
+						<a href="#">世界上著名的粉钻</a>
+					</li>
+					<li>
+						<a href="#">绿幽灵佩戴禁忌及选购技巧</a>
+					</li>
+					<li>
+						<a href="#">钻戒怎么清洗？</a>
+					</li>
+					<li>
+						<a href="#">教你钻石怎么辨别真假的方法</a>
+					</li>
+				</ul>
+				<span><a href="#">查看全部</a></span>
+			</div>
+		</div>
+		<div class="zixun_right" id="zixun_right">
+			
+			   <div class="box10" id="box10">
+					  <div class="zixun_right1" id="zixun_right1"></div>
+					  <div id="zixun_right2"></div>
+			   </div>
+			  <div id="box9" class="box9">
+			  	<div class="active6"></div>
+			  	<div></div>
+			  	
+			  </div>
+		</div>
+	</div>
+	
+	<!--尾部-->
+	<div class="foot">
+		<a href="#"><div class="foot_top"></div></a>
+		<div class="foot_center">
+			<div><img src="images/logo85x90.jpg"/></div>
+			<div>
+				<a href="#">关于我们</a>
+				<a href="#">品牌简介</a>
+				<a href="#">诚聘贤才</a>
+				<a href="#">市场合作</a>
+				<a href="#">联系我们</a>
+				<a href="#">商务加盟</a>
+			</div>
+			<div>
+				<a href="#">购物指南</a>
+				<a href="#">购物流程</a>
+				<a href="#">订单处理时</a>
+				<a href="#">订单查询</a>
+				<a href="#">特色商品说明</a>
+			</div>
+			<div>
+				<a href="#">支付方式</a>
+				<a href="#">在线支付</a>
+				<a href="#">货到付款</a>
+				<a href="#">银行汇款</a>
+				<a href="#">海外汇款</a>
+			</div>
+			<div>
+				<a href="#">配送方式</a>
+				<a href="#">体验中心自提</a>
+				<a href="#">全国免费配送</a>
+				<a href="#">海外配送</a>
+				<a href="#">货品包装</a>
+			</div>
+			<div>
+				<a href="#">售后服务</a>
+				<a href="#">售后政策</a>
+				<a href="#">15天退换</a>
+				<a href="#">以小换大</a>
+				<a href="#">优惠换款</a>
+			</div>
+			<div><img src="images/code.jpg"/></div>
+			
+		</div>
+		<div class="tel">
+			<a href="#">
+				<img src="images/f111_01.png" />
+			</a>
+		</div>
+		<div class="copy">
+		<a href="#">网站地图|</a>	<a href="#">友情链接|</a><a href="#">在线投诉|</a>    沪ICP备08011593号|Copyright © 2002-2017 www.zbird.com  钻石小鸟  All Rights Reserved. 
+		</div>
+		<div class="boli">
+			上海铂利德钻石有限公司     021-26011188
+		</div>
+		<div class="lianjie">
+			<a href="#">南京钻石小鸟</a><span>|</span>
+			<a href="#">天津钻石小鸟</a><span>|</span>
+			<a href="#">西安钻石小鸟</a><span>|</span>
+			<a href="#">重庆北京钻石小鸟</a><span>|</span>
+			<a href="#"> 黑光网</a><span>|</span>
+			<a href="#">中国女装品牌</a><span>|</span>
+			<a href="#">优惠券</a><span>|</span>
+			<a href="#">酒店预订</a><span>|</span>
+			<a href="#">卷皮网</a><span>|</span>
+			<a href="#">还利网</a><span>|</span>
+			<a href="#">买鞋网</a><span>|</span>
+			<a href="#">钻石加盟</a><span>|</span>
+			<a href="#">华夏收藏网</a><span>|</span>
+			<a href="#">翡翠网</a>
+			
+		</div>
+		<div class="beian">
+			<a href="#"><img src="images/fot_certi.gif"/></a>
+			<a href="#"><img src="images/fot_certi_02.jpg"/></a>
+			<a href="#"><img src="images/fot_certi_03.jpg"/></a>
+			<a href="#"><img src="images/fot_certi_04.jpg"/></a>
+			<a href="#"><img src="images/picp_bg.png" style="width: 116px;height: 35px;"/></a>
+		</div>
+	</div>
+	<!--固定定位-->
+	<div class="fixedd" id="fixedd">
+		<a id="drap" href="#"><img src="images/1.gif" /></a>
+		<a href="#" id="gouwu1"><img src="images/2.jpg" /></a>
+		<a href="#"><img src="images/3.jpg" /></a>
+		<a href="#"><img src="images/4.jpg" /></a>
+		<a id="erweima" href="#" style="border: none;"><img src="images/5.jpg" /></a>
+		<div id="erweima1"><img src="images/code_wechat.jpg"/></div>
+	</div>
+	<div class="meinv">
+		<a href="#"><img src="images/img.png" /></a>
+	</div>
+	
+<audio autoplay controls>    
+<source src="css/Beyond - 喜欢你 (纯音乐).mp3"  type="audio/mp3">    
+</audio>
+
+
+    <div class="drap">
+    	<div class="drap_1">
+    		<div class="guanbi">关闭</div>
+    	</div>
+    	<div class="drap_2">
+    		<div class="drap_2_1"></div>
+    		<textarea class="drap_2_2"></textarea>
+    		<!--<div class="drap_2_2"></div>-->
+    	</div>
+    	<div class="drap_3">
+    		<div class="drap_3_1"></div>
+    	</div>
+    </div>
+	
+	</body>
+</html>

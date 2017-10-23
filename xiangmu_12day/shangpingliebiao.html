@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css公用资料/reset .css" />
+		<style>
+			box8html,body{
+	width: 100%;
+	overflow-x: hidden;
+}
+body{
+	position: relative;
+}
+/*
+ head开始
+ */
+.head{
+	width:100%;
+	height: 30px;
+	background:peachpuff;
+}
+.head_left{
+	float: left;
+	height: 30px;
+	margin-left:100px ;
+}
+.head_left p{
+	float: left;
+	line-height: 30px;
+}
+.head_left a{
+	float: left;
+	line-height: 30px;
+	color: black;
+}
+#denglu{
+	margin:0 20px;
+}
+.head_right{
+	float: right;
+	width: 400px;
+	height: 30px;
+	margin-right:50px ;
+}
+.head_right ul{
+	width: 450px;
+	height: 30px;
+}
+.head_right ul li{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.head_right ul li #gouwuche{
+	margin: 0 5px;
+}
+.head_right ul li #xiangxia1{
+	margin: 0 5px;
+}
+.head_right ul li #xiangxia2{
+	margin: 0 5px;
+}
+#gouwu{
+	position: relative;
+}
+#shangpin{
+	position: absolute;
+	left: 0;
+	top: 30px;
+	height: 50px;
+	width:200px;
+	border: 1px solid deeppink;
+	text-align: center;
+	line-height: 50px;
+	display: none;
+}
+#guanwang,#niao{
+	position: relative;
+}
+#niaocao{
+	width: 50px;
+	height: 100px;
+	left: 0;
+	top: 30px;
+	border: 1px solid deeppink;
+	display: none;
+}
+#guanw{
+	position: absolute;
+	right:0 ;
+	top: 30px;
+	height: 160px;
+	width: 240px;
+	border: 1px solid deeppink;
+	display: none;
+}
+
+
+/*
+ logo开始
+ */
+.logo{
+	width:100%;
+	height: 80px;
+	background: papayawhip;
+}
+.logo_left{
+	float: left;
+	height: 80px;
+	/*line-height: 80px;*/
+}
+.logo_right{
+	float: right;
+	height: 80px;
+	line-height: 80px;
+}
+
+.logo_left img{
+	margin: 21px 100px;
+	cursor: pointer;
+}
+.logo_right{
+	margin-right:50px ;
+	position: relative;
+}
+.logo_right #seach{
+	width: 200px;
+	height:40px;
+	border: none;
+	border: 1px solid #ccc;
+}
+.logo_right #laidian{
+	width: 60px;
+	height: 40px;
+	background: #fff;
+	border: none;
+	border: 1px solid #ccc;
+}
+.logo_right img{
+	position: absolute;
+	left:160px ;
+	top: 25px;
+}
+/*
+ * 导航开始
+ */
+.nuv{
+	width:100%;
+	height: 30px;
+	background:#555555;
+}
+.nuv .list3{
+	width: 700px;
+	height: 30px;
+	float: left;
+	margin-left:100px ;
+}
+.nuv .list3 li{
+	width: 100px;
+	height: 30px;
+	float: left;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+}
+.nuv .list3 #active{
+	background: pink;
+}
+
+.nuv .list4{
+	width: 200px;
+	height: 30px;
+	float: right;
+	margin-right:50px ;
+}
+.nuv .list4 li{
+	width: 100px;
+	height: 30px;
+	float: left;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+}
+	
+	
+	/*商品详情*/		
+ .shangpingxiangqing{
+ 	width: 1180px;
+ 	height: 630px;
+ 	margin: 0 auto;
+ 	/*background: red;*/
+ 	position: relative;
+ 	border-bottom: 1px solid black;
+ 	overflow: hidden;
+ }			
+.shangpingxiangqing .shangpingxiangqing_lfet{
+ 	width: 300px;
+ 	height: 400px;
+ 	position: absolute;
+ 	top: 80px;
+ 	left: 40px;
+   /* margin: 80px 0 0 40px; 	*/
+ 	/*border: 1px solid #000000;*/
+ 	float: left;
+ }
+
+.shangpingxiangqing .shangpingxiangqing_lfet #smallImg{
+ 	width: 300px;
+ 	height: 300px;
+ 	position: absolute;
+    top: 0px;
+    left: 0px;  	
+    border: 1px solid #000000;
+ 	/*background: pink;*/
+ }
+ .shangpingxiangqing .shangpingxiangqing_lfet .xiaosmallimg{
+ 	position: absolute;
+ 	top: 310px;
+ 	left: 0px;
+ 	height: 80px;
+ 	width: 300px;
+ 	/*border: 1px solid black;*/
+ 
+ }
+  .shangpingxiangqing .shangpingxiangqing_lfet .xiaosmallimg #xiaosmallimg1{
+  	float: left;
+  	margin-right: 15px;
+  	border: 1px solid black;
+  	width: 88px;
+  	height: 80px;
+  }
+   .shangpingxiangqing .shangpingxiangqing_lfet .xiaosmallimg #xiaosmallimg2{
+  	float: left;
+  	margin-right: 15px;
+  	border: 1px solid black;
+  	width: 88px;
+  	height: 80px;
+  }
+   .shangpingxiangqing .shangpingxiangqing_lfet .xiaosmallimg #xiaosmallimg3{
+  	float: left;
+  	/*margin-left: 2px;*/
+  	border: 1px solid black;
+  	width: 88px;
+  	height: 80px;
+  }
+ .shangpingxiangqing .shangpingxiangqing_lfet #smallImg #img{
+ 	width: 300px;
+ 	height: 300px;
+ }
+ 
+ .shangpingxiangqing .shangpingxiangqing_lfet #smallImg #fangdajing{
+ 	/*width: 100px;
+ 	height: 100px;*/
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ 	background: rgba(22,111,200,0.8);
+ 	z-index: 1;
+ 	display: none;
+ }
+ 
+ 
+ 
+ 
+ .shangpingxiangqing .shangpingxiangqing_lfet #bigImg{
+ 	width: 400px;
+ 	height: 400px;
+ 	position: absolute;
+    top: 40px;
+    left:320px;  	
+ 	border: 1px solid #000000;
+ 	display: none;
+ 	overflow: hidden;
+ }
+ 
+  .shangpingxiangqing .shangpingxiangqing_lfet #bigImg #img1{
+ 	width: 600px;
+ 	height: 600px;
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ }
+ 
+
+.shangpingxiangqing .shangpingxiangqing_right{
+	
+	width: 550px;
+	height: 630px;
+	float: right;
+	
+	
+}
+.shangpingxiangqing .shangpingxiangqing_right1{
+	width:550px ;
+	margin-top: 80px;
+	margin-bottom:10px;
+	
+}
+
+.shangpingxiangqing .shangpingxiangqing_right1 p{
+	margin-bottom:10px;
+	font-size: 20px;
+}
+.shangpingxiangqing .shangpingxiangqing_right1 b{
+	margin-right: 30px;
+	
+	
+	
+}
+.shangpingxiangqing .shangpingxiangqing_right1 strong{
+	color: red;
+	margin-left: 10px;
+	font-size: 16px;
+	
+}
+.shangpingxiangqing .shangpingxiangqing_right1 span{
+	color: red;
+	margin-left: 10px;
+	font-size: 16px;
+}
+.shangpingxiangqing .shangpingxiangqing_right2{
+	width: 550px;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+.shangpingxiangqing .shangpingxiangqing_right2 i{
+	
+	line-height: 40px;
+	font-size: 14px;
+	
+}
+.shangpingxiangqing .shangpingxiangqing_right2 span{
+	
+	margin-left: 30px;
+}
+#gengduo{
+	margin-top: 30px;
+	display: inline-block;
+	 color: black;
+}
+#xuanzeqita{
+	width: 200px;
+	height: 30px;
+	display: inline-block;
+	border:1px solid #ccc;
+	text-align: center;
+    line-height: 30px;
+    color: black;
+    margin-left: 100px;
+}
+#jiarugouwu{
+	 width: 200px;height: 30px;
+	 display: inline-block;
+	 border: 1px solid #ccc;
+	 text-align: center;
+	 line-height: 30px;
+	 color: #fff;
+	 margin-top: 30px;
+	 background: pink;
+	
+}
+#fenqi{
+	width: 200px;
+	height: 30px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	margin-left: 10px;
+	background: #DF5000;
+}
+#dingzhi{
+	color: black;
+}
+
+
+
+/*尾部*/
+
+
+.foot{
+	width: 100%;
+	background: #fdf2ec;
+}
+.foot .foot_top{
+	width: 1180px;
+	height:66px;
+	background: url(images/footer_lnks.jpg) no-repeat top;
+	margin: 0 auto;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 20px;
+}
+.foot .foot_center{
+	width: 1180px;
+	height: 120px;
+	margin:0 auto ;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.foot .foot_center div{
+	float: left;
+}
+.foot .foot_center div a{
+	display: block;
+	color: black;
+	line-height: 20px;
+}
+.foot .foot_center div:nth-child(1){
+	width: 161px;
+	height: 120px;
+}
+.foot .foot_center div:nth-child(2){
+	width: 161px;
+	height: 120px;
+}
+.foot .foot_center div:nth-child(3){
+	width: 161px;
+	height: 120px;
+}
+.foot .foot_center div:nth-child(4){
+	width: 161px;
+	height: 120px;
+}
+.foot .foot_center div:nth-child(5){
+	width: 161px;
+	height: 120px;
+}
+.foot .foot_center div:nth-child(6){
+	width: 161px;
+	height: 120px;
+}
+.foot .foot_center div:nth-child(7){
+	width: 214px;
+	height: 66px;
+}
+
+.foot .tel{
+	width:500px;
+	height: 60px;
+	/*border: 1px solid black;*/
+	margin: 0 auto;
+	margin-bottom:10px ;
+}
+.foot .tel a{
+	display: block;
+	width: 500px;
+	height: 60px;
+	
+}
+.foot .tel a img{
+	display: block;
+	width: 500px;
+	height: 60px;
+	
+}
+
+.foot .copy{
+	width: 1180px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom:10px ;
+}
+.foot .copy a{
+	color: black;
+}
+.foot .copy a:hover{
+	color: red;
+}
+.foot .boli{
+	width: 1180px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom:10px ;
+}
+.foot .lianjie{
+	width: 1180px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom:10px ;
+}
+.foot .lianjie a{
+	color: black;
+}
+.foot .lianjie a:hover{
+	color: red;
+}
+.foot .beian{
+	width: 1180px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom:50px ;
+}
+.fixedd{
+	width: 67px;
+	position: fixed;
+	right: 0;
+	top: 35%;
+	z-index: 1;
+}
+.fixedd a{
+	width: 67px;
+	height: 67px;
+	display: block;
+	border-bottom:1px solid #fff;
+	/*margin: none;*/
+}
+.fixedd a img{
+	width: 67px;
+	height: 67px;
+}
+
+.meinv{
+	width: 88px;
+	height: 95px;
+	position: fixed;
+	right: 0;
+	top: 22%;
+}	
+
+
+/*
+ * 购物车飞
+ */		
+ .u-flyer{display:block; width:50px; height:50px; border-radius:50px; position:fixed; z-index: 9999;}
+			
+			
+			
+			
+			
+		</style>
+		<script src="js/jquery-1.12.3.js"></script>
+		<script src="js/jquery.fly.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script>
+			$(function(){
+				//截取参数
+				function jiequcanshu(str,name){
+					
+					var arr=str.split("&");
+					
+					for(var i=0;i<arr.length;i++){
+						var str1=arr[i];
+						var arr1=str1.split("=");
+						if(arr1[0]==name){
+							return arr1[1];
+						}
+					}
+					return "";
+					
+				}
+				// 参数
+				var canshu=location.search.substring(1);
+				var pid=jiequcanshu(canshu,"id");
+				
+//				console.log(pid)
+				var arr=[];
+				//获取json数据
+				$.get("json/shangpingliebiao.json",function(date){
+//					console.log(date);
+					 arr=date;
+					
+					for(var i=0;i<arr.length;i++){
+						var obj=arr[i];
+						
+			   
+				   
+						if(obj.id==pid){
+							$("#img").attr("src",obj.img)
+							$("#img1").attr("src",obj.img)
+							$(".name").html(obj.name)
+							$(".jiage").html(obj.jiage1+obj.jiage)
+							$(".shouchu").html(obj.shouchu)
+							$(".pinglun").html(obj.pinglun)
+							$(".pingming").html(obj.pingming)
+							$(".caizhi").html(obj.caizhi)
+							$(".shoucun").html(obj.shoucun)
+							$(".zhuanshi").html(obj.zhuanshi)
+							$("#xiaosmallimg1").attr("src",obj.img1)
+							$("#xiaosmallimg2").attr("src",obj.img2)
+							$("#xiaosmallimg3").attr("src",obj.img3)
+							
+							
+							//小图移入
+							$(".xiaosmallimg img").mouseenter(function(){
+								
+								$("#img").attr("src",$(this).attr("src"));
+								$("#img1").attr("src",$(this).attr("src"));
+								
+							})
+							
+							$(".shangpingxiangqing_lfet").mouseleave(function(){
+								$("#img").attr("src",obj.img)
+								$("#img1").attr("src",obj.img)
+							})	
+							
+							
+//							console.log(obj)
+                            //重新赋值
+							var sty = obj;
+								//加入购物车
+						   $("#jiarugouwu").click(function(e){
+						   	
+										   	     //点击加入购物车
+								
+									
+									var flyer = $("<img class='u-flyer'/>"); //创建img节点, 给一个class=u-flyer
+									flyer.attr("src", "images/2.jpg"); //给img一张图
+									
+									//调用fly, 让图片飞
+									flyer.fly({
+										
+										//起始位置
+										start: {
+											left: e.clientX,
+											top: e.clientY			 		
+										},
+										//结束位置
+										end: {
+											left: $("#cart").offset().left,
+											top: $("#cart").offset().top,
+											width: 0,
+											height: 0 
+										},
+										//结束后
+										onEnd: function(){
+											flyer.remove();
+											console.log("加入购物车成功!");
+										}
+									});
+									
+								
+										   	
+										   	
+							
+
+			                 //将当前点击的商品数据加入购物车（cookie）
+                            var arr2=$.cookie("cats")?JSON.parse($.cookie("cats")):[];
+			                
+			                 arr2.push(sty);
+//							console.log(sty)	
+								
+			                ////将arr2添加到cookie中
+			                $.cookie("cats",JSON.stringify(arr2),{expires:30,path:"/"})
+//			                console.log($.cookie("cats"));
+                            location.href="zhuanshixiaoniaocat.html";
+										
+						})
+							
+							
+						}
+					
+					}
+					
+				})
+				
+				
+				
+			//加入购物车
+//			$("#shangpingxiangqing").on("click","#jiarugouwu", function(){
+//				
+//				var index=$(this).index("#shangpingxiangqing #jiarugouwu")
+//				
+////				console.log(index);//0
+//              var obj=arr[index];//所点击的商品
+////              console.log(obj);//点击的数组
+//              //将当前点击的商品数据加入购物车（cookie）
+//               var arr2=$.cookie("cats")?JSON.parse($.cookie("cats")):[];
+//              
+//               arr2.push(obj);
+//					
+//					
+//              ////将arr2添加到cookie中
+//              $.cookie("cats",JSON.stringify(arr2),{expires:30,path:"/"})
+//              console.log($.cookie("cats"));
+//			})
+//				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				//放大镜
+				
+				//求出放大比例
+				$("#fangdajing").width($("#smallImg").width()*$("#bigImg").width() / $("#img1").width() )
+				$("#fangdajing").height($("#smallImg").height()*$("#bigImg").height() / $("#img1").height() )
+				
+
+			
+				
+				//放大倍数    放大的图片/ 小图片的盒子
+				var beishu=$("#img1").width()/$("#smallImg").width()
+				//移入显示
+				$("#smallImg").mousemove(function(e){
+					
+					 e.preventDefault();
+					//显示
+					$("#fangdajing").show();
+					$("#bigImg").show();
+					
+				   var disx=e.pageX-$("#fangdajing").width()/2-$("#smallImg").offset().left;
+				   var disy=e.pageY-$("#fangdajing").height()/2-$("#smallImg").offset().top;
+					
+					
+					//判断边界
+					if(disx<0){
+						disx=0;
+					}else if(disx>$("#smallImg").width()-$("#fangdajing").width()){
+						disx=$("#smallImg").width()-$("#fangdajing").width();
+					}
+					
+					if(disy<0){
+						disy=0;
+					}else if(disy>$("#smallImg").height()-$("#fangdajing").height()){
+						
+						disy=$("#smallImg").height()-$("#fangdajing").height();
+					}
+					
+					
+					
+					//给出大小图的位置
+					$("#fangdajing").css({left:disx,top:disy});
+					
+					$("#img1").css({left:-beishu*disx,top:-disy*beishu})
+					
+				})
+				
+				//移除消失
+				$("#smallImg").mouseout(function(e){
+					$("#fangdajing").hide();
+					$("#bigImg").hide();
+					
+				})
+				
+				
+			
+				
+						
+							
+	})
+		</script>
+	</head>
+	<body>
+		
+				<!--头部-->
+		<div class="head" id="head">
+			<div class="head_left">
+				<p>欢迎进入钻石小鸟官网</p>
+				<a id="denglu" href="denglu.html">登录</a>
+				<a id="zhuce" href="zhuce.html">注册</a>
+			</div>
+			<div class="head_right">
+				<ul id="list">
+					<li id="gouwu">
+						<img id="gouwuche" src="images/header_box.png"/>
+						购物车
+						<span>0</span>
+						<img id="xiangxia1" src="images/icon_drop.png"/>
+						<div id="shangpin">购物车暂无商品</div>
+					</li>
+					<li>我的订单</li>
+					<li id="niao">
+						我的鸟巢
+						<img id="xiangxia2" src="images/icon_drop.png"/>
+						<div id="niaocao">
+							<span>订单查询</span>
+							<span>售后服务</span>
+							<span>积分换礼</span>
+						</div>
+					</li>
+					<li>钻石课堂</li>
+					<li id="guanwang">
+						手机官网
+						<div id="guanw">
+							<img src="images/code_wechat.jpg" />
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+    <!--logo-->
+	    <div class="logo">
+	    	<div class="logo_left">
+	    		<img src="images/h1.png" />
+	    	</div>
+	    	<div class="logo_right">
+	    		<input id="seach" type="text" placeholder="戒托" />
+	    		<input id="laidian" type="button" value="来店预约" />
+	    		<img src="images/shousuo.jpg" />
+	    	</div>
+	    </div>
+	  
+	  	
+	  	<!--nuv-->
+	  	<div class="nuv">
+	  		<ul id="list3" class="list3">
+	  			<li id="active">首页</li>
+	  			<li>钻石</li>
+	  			<li>婚戒</li>
+	  			<li>对戒</li>
+	  			<li>配饰</li>
+	  			<li>定制</li>
+	  			<li>体验中心</li>
+	  		</ul>
+	  		<ul id="list4" class="list4">
+	  			<li>品牌故事</li>
+	  			<li>鸟巢论坛</li>
+	  			
+	  		</ul>
+	  	</div>
+	  	
+	  	
+	  <!--商品详情-->
+	  	
+	  	
+	  	<div class="shangpingxiangqing" id="shangpingxiangqing">
+	  		
+	  		
+	  		
+	  	    <div class="shangpingxiangqing_lfet">
+		  		  
+			  		 <div id="smallImg">
+			  		 		<img id="img" src="" />
+			  		 		<div id="fangdajing"></div>
+			  		 </div>
+			  		
+			<div class="xiaosmallimg">
+				   <img id="xiaosmallimg1" src="" />
+				   <img id="xiaosmallimg2" src="" />
+				   <img id="xiaosmallimg3" src="" />
+			</div> 		
+			  		
+			  		 <div id="bigImg">
+			  		    	<img id="img1" src="" />
+			  		  </div>
+	  		</div>
+	  		
+	  		<div class="shangpingxiangqing_right">
+	  			<div class="shangpingxiangqing_right1">
+	  			<p class="name"><!--拥暖Ⅱ--></p>
+       	    	<b>价格<strong class="jiage"><!--￥10530--></strong></b>
+       	    	<b>售出<span class="shouchu"><!--4904--></span></b>
+       	    	<b>评论<span class="pinglun"><!--243--></span></b>
+       	       </div>
+       	       
+       	    	<div class="shangpingxiangqing_right2">
+       	    	 
+       	    	 <i>品名</i><span class="pingming"><!--18K金钻石戒指--></span><br />
+       	    	 <i>材质</i><span class="caizhi"><!--白18K金--></span><br />
+       	    	 <i>手寸</i><span class="shoucun"><!--15号&nbsp;&nbsp;&nbsp;如何测手寸--></span><br />
+       	    	 <i>钻石</i><span class="zhuanshi"><!--主钻1颗&nbsp;0.30克拉辅钻8颗&nbsp;0.07克拉--></span><br />
+       	    	 <i>配送</i><span style="color: red;">本商品支持货到付款</span>
+       	    		
+       	    		
+       	    	</div>
+       	    	
+       	        <a href="#" id="gengduo">
+       	        	更多
+       	        </a>
+       	        <a href="zhuanshixiaoniao.html" id="xuanzeqita" >
+       	        	选择其他同款
+       	        </a><br />
+       	        <a href="javascript:;" id="jiarugouwu">加入购物车</a>
+	  			<a href="#" id="fenqi">免息分期</a>
+	  			<a href="#" id="dingzhi"> 专属定制</a>
+	  			 
+	  		</div>
+	  		
+	  		
+	  
+	  		
+	  		
+	  	</div>
+	  	
+	  	
+	  
+	  	
+	  	<!--尾部-->
+	<div class="foot">
+		<a href="#"><div class="foot_top"></div></a>
+		<div class="foot_center">
+			<div><img src="images/logo85x90.jpg"/></div>
+			<div>
+				<a href="#">关于我们</a>
+				<a href="#">品牌简介</a>
+				<a href="#">诚聘贤才</a>
+				<a href="#">市场合作</a>
+				<a href="#">联系我们</a>
+				<a href="#">商务加盟</a>
+			</div>
+			<div>
+				<a href="#">购物指南</a>
+				<a href="#">购物流程</a>
+				<a href="#">订单处理时</a>
+				<a href="#">订单查询</a>
+				<a href="#">特色商品说明</a>
+			</div>
+			<div>
+				<a href="#">支付方式</a>
+				<a href="#">在线支付</a>
+				<a href="#">货到付款</a>
+				<a href="#">银行汇款</a>
+				<a href="#">海外汇款</a>
+			</div>
+			<div>
+				<a href="#">配送方式</a>
+				<a href="#">体验中心自提</a>
+				<a href="#">全国免费配送</a>
+				<a href="#">海外配送</a>
+				<a href="#">货品包装</a>
+			</div>
+			<div>
+				<a href="#">售后服务</a>
+				<a href="#">售后政策</a>
+				<a href="#">15天退换</a>
+				<a href="#">以小换大</a>
+				<a href="#">优惠换款</a>
+			</div>
+			<div><img src="images/code.jpg"/></div>
+			
+		</div>
+		<div class="tel">
+			<a href="#">
+				<img src="images/f111_01.png" />
+			</a>
+		</div>
+		<div class="copy">
+		<a href="#">网站地图|</a>	<a href="#">友情链接|</a><a href="#">在线投诉|</a>    沪ICP备08011593号|Copyright © 2002-2017 www.zbird.com  钻石小鸟  All Rights Reserved. 
+		</div>
+		<div class="boli">
+			上海铂利德钻石有限公司     021-26011188
+		</div>
+		<div class="lianjie">
+			<a href="#">南京钻石小鸟</a><span>|</span>
+			<a href="#">天津钻石小鸟</a><span>|</span>
+			<a href="#">西安钻石小鸟</a><span>|</span>
+			<a href="#">重庆北京钻石小鸟</a><span>|</span>
+			<a href="#"> 黑光网</a><span>|</span>
+			<a href="#">中国女装品牌</a><span>|</span>
+			<a href="#">优惠券</a><span>|</span>
+			<a href="#">酒店预订</a><span>|</span>
+			<a href="#">卷皮网</a><span>|</span>
+			<a href="#">还利网</a><span>|</span>
+			<a href="#">买鞋网</a><span>|</span>
+			<a href="#">钻石加盟</a><span>|</span>
+			<a href="#">华夏收藏网</a><span>|</span>
+			<a href="#">翡翠网</a>
+			
+		</div>
+		<div class="beian">
+			<a href="#"><img src="images/fot_certi.gif"/></a>
+			<a href="#"><img src="images/fot_certi_02.jpg"/></a>
+			<a href="#"><img src="images/fot_certi_03.jpg"/></a>
+			<a href="#"><img src="images/fot_certi_04.jpg"/></a>
+			<a href="#"><img src="images/picp_bg.png" style="width: 116px;height: 35px;"/></a>
+		</div>
+	</div>
+	<!--固定定位-->
+	<div class="fixedd" id="fixedd">
+		<a href="#"><img src="images/1.gif" /></a>
+		<a href="#"><img id="cart" src="images/2.jpg" /></a>
+		<a href="#"><img src="images/3.jpg" /></a>
+		<a href="#"><img src="images/4.jpg" /></a>
+		<a href="#" style="border: none;"><img src="images/5.jpg" /></a>
+		
+	</div>
+	<div class="meinv">
+		<a href="#"><img src="images/img.png" /></a>
+	</div>
+		
+		
+		
+		
+	</body>
+</html>
+
+
+
+
+
+
+<!--//						
+//					$("<div class='shangpingxiangqing_lfet'><div id='smallImg'><img id='img' src='' /><div id='fangdajing'></div></div><div id='bigImg'><img id='img1' src='' /></div></div>").appendTo("#shangpingxiangqing");
+//						
+//						
+//				   $("<div class='shangpingxiangqing_right'><div class='shangpingxiangqing_right1'><p class='name'></p><b>价格<strong class='jiage'></strong></b><b>售出<span class='shouchu'></span></b><b>评论<span class='pinglun'></span></b></div><div class='shangpingxiangqing_right2'><i>品名</i><span class='pingming'></span><br /><i>材质</i><span class='caizhi'></span><br /><i>手寸</i><span class='shoucun'></span><br /><i>钻石</i><span class='zhuanshi'></span><br /><i>配送</i><span style='color: red;'>本商品支持货到付款</span></div><a href='#' id='gengduo'>更多</a><a href='zhuanshixiaoniao.html' id='xuanzeqita' >选择其他同款</a><br /><a href='javascript:;'id='jiarugouwu'>加入购物车</a><a href='#' id='fenqi'>免息分期</a><a href='#' id='dingzhi'> 专属定制</a></div>").appendTo("#shangpingxiangqing");
+//	-->

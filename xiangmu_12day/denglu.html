@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css公用资料/reset .css" />
+		<style>
+			html,body{
+					width: 100%;
+				}
+				body{
+					position: relative;
+				}
+				
+				a{color: black;}
+				/*
+				 head开始
+				 */
+				.head{
+					width:100%;
+					height: 30px;
+					background:peachpuff;
+				}
+				.head_left{
+					float: left;
+					height: 30px;
+					margin-left:100px ;
+				}
+				.head_left p{
+					float: left;
+					line-height: 30px;
+				}
+				.head_left input{
+					float: left;
+					line-height: 30px;
+					border: none;
+					background: none;
+					cursor: pointer;
+				}
+				#denglu{
+					margin:0 20px;
+				}
+				.head_right{
+					float: right;
+					width: 400px;
+					height: 30px;
+					margin-right:50px ;
+				}
+				.head_right ul{
+					width: 450px;
+					height: 30px;
+				}
+				.head_right ul li{
+					float: left;
+					height: 30px;
+					line-height: 30px;
+					margin: 0 10px;
+					cursor: pointer;
+				}
+				
+				.head_right ul li #gouwuche{
+					margin: 0 5px;
+				}
+				.head_right ul li #xiangxia1{
+					margin: 0 5px;
+				}
+				.head_right ul li #xiangxia2{
+					margin: 0 5px;
+				}
+				#gouwu{
+					position: relative;
+				}
+				#shangpin{
+					position: absolute;
+					left: 0;
+					top: 30px;
+					height: 50px;
+					width:200px;
+					border: 1px solid deeppink;
+					text-align: center;
+					line-height: 50px;
+					display: none;
+				}
+				#guanwang,#niao{
+					position: relative;
+				}
+				#niaocao{
+					width: 50px;
+					height: 100px;
+					left: 0;
+					top: 30px;
+					border: 1px solid deeppink;
+					display: none;
+				}
+				#guanw{
+					position: absolute;
+					right:0 ;
+					top: 30px;
+					height: 160px;
+					width: 240px;
+					border: 1px solid deeppink;
+					display: none;
+				}
+				
+				/*
+ logo开始
+ */
+				.logo{
+					width:100%;
+					height: 80px;
+					/*background: papayawhip;*/
+				}
+				.logo_left{
+					float: left;
+					height: 80px;
+					/*line-height: 80px;*/
+				}
+				.logo_right{
+					float: right;
+					height: 80px;
+					line-height: 80px;
+				}
+				
+				.logo_left img{
+					margin: 21px 100px;
+					cursor: pointer;
+				}
+				.logo_right{
+					margin-right:50px ;
+					position: relative;
+				}
+				.logo_right #seach{
+					width: 200px;
+					height:40px;
+					border: none;
+					border: 1px solid #ccc;
+				}
+				.logo_right #laidian{
+					width: 60px;
+					height: 40px;
+					background: #fff;
+					border: none;
+					border: 1px solid #ccc;
+				}
+				.logo_right img{
+					position: absolute;
+					left:160px ;
+					top: 25px;
+				}
+            
+				.zhuce{
+					width: 100%;
+					height: 601px;
+					background: #fadeda;
+				}
+				.zhuce .zhuce_left{
+					width: 604px;
+					height: 601px;
+					margin-left: 100px;
+					float: left;
+				}	
+				
+				
+				
+				.zhuce .zhuce_right{
+					width: 370px;
+					height: 420px;
+					float: right;
+					background: papayawhip;
+					margin: 100px 200px 0 0;
+				}
+				
+				.zhuce .zhuce_right .zhuce_righttop{
+					
+					width: 370px;
+					height:40px;
+					background: #fadeda;
+					
+				}
+				.zhuce .zhuce_right .zhuce_righttop p{
+					float: left;
+					font-size:16px ;
+					line-height: 40px;
+				}
+				.zhuce .zhuce_right .zhuce_righttop span{
+					display: block;
+					float: right;
+					font-size:14px ;
+					line-height: 40px;
+					margin: 0 10px;
+				}
+				.zhuce .zhuce_right .zhuce_righttop i{
+					display: block;
+					float: right;
+					font-size:14px ;
+					line-height: 40px;
+				}
+				
+				.zhuce .zhuce_right .zhuce_rightbottom{
+					width: 350px;
+					height: 360px;
+					margin: 10px;
+					text-align: center;
+					
+				}
+				.zhuce .zhuce_right .zhuce_rightbottom input:nth-child(1){
+					width: 306px;
+					height: 40px;
+					border: none;
+					margin-top: 20px;
+				}
+				.zhuce .zhuce_right .zhuce_rightbottom input:nth-child(2){
+					width: 306px;
+					height: 40px;
+					border: none;
+					margin-top: 20px;
+				}
+				.zhuce .zhuce_right .zhuce_rightbottom #bnt{
+					width: 306px;
+					height: 40px;
+					border: none;
+					background:deeppink;
+					margin-top: 20px;
+				}
+				
+				.zhuce .zhuce_right .boxbox{
+					width: 306px;
+					height: 46px;
+					margin:30px 0 0  25px;
+					display: flex;
+					justify-content: space-around;
+					
+				}
+				.zhuce .zhuce_right .qq{
+					width: 46px;
+					height: 46px;
+					float: left;
+					background: url(images/qq-btn.jpg) no-repeat right;
+				}
+				.zhuce .zhuce_right .weixin{
+					width: 46px;
+					height: 46px;
+					float: left;
+					background: url(images/weixin-btn.jpg) no-repeat right;
+				}
+				.zhuce .zhuce_right .xinlang{
+					width: 46px;
+					height: 46px;
+					float: left;
+					background: url(images/sina-btn.jpg) no-repeat right;
+				}
+				.zhuce .zhuce_right .zhifubao{
+					width: 46px;
+					height: 46px;
+					float: left;
+					background: url(images/zhifubao-btn.jpg) no-repeat right;
+				}
+				
+				
+	
+				
+				
+				
+				/* 尾部开始*/
+				.foot{
+					width: 100%;
+					background: #fdf2ec;
+				}
+				.foot .foot_top{
+					width: 1180px;
+					height:66px;
+					background: url(images/footer_lnks.jpg) no-repeat top;
+					margin: 0 auto;
+					border-bottom: 1px solid #fff;
+					margin-bottom: 20px;
+				}
+				.foot .foot_center{
+					width: 1180px;
+					height: 120px;
+					margin:0 auto ;
+					overflow: hidden;
+					margin-bottom: 30px;
+				}
+				.foot .foot_center div{
+					float: left;
+				}
+				.foot .foot_center div a{
+					display: block;
+					color: black;
+					line-height: 20px;
+				}
+				.foot .foot_center div:nth-child(1){
+					width: 161px;
+					height: 120px;
+				}
+				.foot .foot_center div:nth-child(2){
+					width: 161px;
+					height: 120px;
+				}
+				.foot .foot_center div:nth-child(3){
+					width: 161px;
+					height: 120px;
+				}
+				.foot .foot_center div:nth-child(4){
+					width: 161px;
+					height: 120px;
+				}
+				.foot .foot_center div:nth-child(5){
+					width: 161px;
+					height: 120px;
+				}
+				.foot .foot_center div:nth-child(6){
+					width: 161px;
+					height: 120px;
+				}
+				.foot .foot_center div:nth-child(7){
+					width: 214px;
+					height: 66px;
+				}
+				
+				.foot .tel{
+					width:500px;
+					height: 60px;
+					/*border: 1px solid black;*/
+					margin: 0 auto;
+					margin-bottom:10px ;
+				}
+				.foot .tel a{
+					display: block;
+					width: 500px;
+					height: 60px;
+					
+				}
+				.foot .tel a img{
+					display: block;
+					width: 500px;
+					height: 60px;
+					
+				}
+				
+				.foot .copy{
+					width: 1180px;
+					margin: 0 auto;
+					text-align: center;
+					margin-bottom:10px ;
+				}
+				.foot .copy a{
+					color: black;
+				}
+				.foot .copy a:hover{
+					color: red;
+				}
+				.foot .boli{
+					width: 1180px;
+					margin: 0 auto;
+					text-align: center;
+					margin-bottom:10px ;
+				}
+				.foot .lianjie{
+					width: 1180px;
+					margin: 0 auto;
+					text-align: center;
+					margin-bottom:10px ;
+				}
+				.foot .lianjie a{
+					color: black;
+				}
+				.foot .lianjie a:hover{
+					color: red;
+				}
+				.foot .beian{
+					width: 1180px;
+					margin: 0 auto;
+					text-align: center;
+					padding-bottom:50px ;
+				}
+				.fixedd{
+					width: 67px;
+					position: fixed;
+					right: 0;
+					top: 35%;
+					z-index: 1;
+				}
+				.fixedd a{
+					width: 67px;
+					height: 67px;
+					display: block;
+					border-bottom:1px solid #fff;
+					/*margin: none;*/
+				}
+				.fixedd a img{
+					width: 67px;
+					height: 67px;
+				}
+				
+				.meinv{
+					width: 88px;
+					height: 95px;
+					position: fixed;
+					right: 0;
+					top: 22%;
+				}
+
+		</style>
+		<script src="js/jquery-1.12.3.js"></script>
+		<script src="js公用资料/cookie.js"></script>
+		<script>
+			$(function(){
+
+				 $(".zhuce_rightbottom input").eq(0).val(getCookie("11"));
+				 $(".zhuce_rightbottom input").eq(1).val(getCookie("22"));
+				
+				
+//				var flag1=false;
+//				var flag2=false;
+//				var shouji1=getCookie("shouji");
+//				var mima=getCookie("mima");
+////				console.log(shouji1)
+////				console.log($(".zhuce_rightbottom input").eq(0).val(shouji1))
+//                //手机
+//				$(".zhuce_rightbottom input").eq(0).keyup(function(){
+//
+//					if($(".zhuce_rightbottom input").eq(0).val()==shouji1){
+//						$("#span1").html("手机可以使用").css("color","blue");
+//						flag1=true;
+//					}else{
+//						$("#span1").html("手机没注册，请注册").css("color","red");
+//						flag1=false;
+//					}
+//
+//				})
+//				//密码
+//				$(".zhuce_rightbottom input").eq(1).keyup(function(){
+//
+//					if($(".zhuce_rightbottom input").eq(1).val()==mima){
+//						$("#span1").html("密码正确").css("color","blue");
+//						flag2=true;
+//					}else{
+//						$("#span1").html("密码错误").css("color","red");
+//						flag2=false;
+//					}
+//
+//				})
+//				//勾选
+				$("#bnt").click(function(){
+
+
+					var phone=$(".zhuce_rightbottom input").eq(0).val();
+					var password=$(".zhuce_rightbottom input").eq(1).val();
+
+					$.post("http://localhost/10.18/xiangmu_10day/php/denglu.php",{phone:phone,pwd:password},function(date){
+//						console.log(JSON.parse(date));
+						var obj=JSON.parse(date);
+						if(obj.status==1){
+							if($(".zhuce_rightbottom input").eq(2).prop("checked")==true){
+
+							 	   var d=new Date();
+								  	d.setDate(d.getDate()+10)
+								  	setCookie("11",$(".zhuce_rightbottom input").eq(0).val(),d)
+								  	setCookie("22",$(".zhuce_rightbottom input").eq(1).val(),d)
+							}
+//                          alert(obj.msg)
+							location.href="zhuanshixiaoniao.html";
+						}else if(obj.status==0){
+							alert(obj.msg)
+						}
+
+					})
+
+
+
+
+//					if(flag1&&flag2){
+//
+////
+//							 if($(".zhuce_rightbottom input").eq(2).prop("checked")==true){
+//
+//							 	var d=new Date();
+//								  	d.setDate(d.getDate()+10)
+//								  	setCookie("11",$(".zhuce_rightbottom input").eq(0).val(),d)
+//								  	setCookie("22",$(".zhuce_rightbottom input").eq(1).val(),d)
+//							}
+//
+//							  alert("登录成功");
+//							 location.href="zhuanshixiaoniao.html"
+						   
+//					}else{
+//							alert("登录失败");
+//							 location.href="denglu.html";
+//					}
+				})
+				
+				
+				
+			})
+		</script>
+	</head>
+	<body>
+		
+			<div class="head" id="head">
+			<div class="head_left">
+				<p>欢迎进入钻石小鸟官网</p>
+				<input id="denglu" type="button" value="登录" />
+				<input id="zhuce" type="button" value="注册" />
+			</div>
+			<div class="head_right">
+				<ul id="list">
+					<li id="gouwu">
+						<img id="gouwuche" src="images/header_box.png"/>
+						购物车
+						<span>0</span>
+						<img id="xiangxia1" src="images/icon_drop.png"/>
+						<div id="shangpin">购物车暂无商品</div>
+					</li>
+					<li>我的订单</li>
+					<li id="niao">
+						我的鸟巢
+						<img id="xiangxia2" src="images/icon_drop.png"/>
+						<div id="niaocao">
+							<span>订单查询</span>
+							<span>售后服务</span>
+							<span>积分换礼</span>
+						</div>
+					</li>
+					<li>钻石课堂</li>
+					<li id="guanwang">
+						手机官网
+						<div id="guanw">
+							<img src="images/code_wechat.jpg" />
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--logo-->
+		 <div class="logo">
+	    	<div class="logo_left">
+	    		<img src="images/h1.png" />
+	    	</div>
+	    	<div class="logo_right">
+	    		<input id="seach" type="text" placeholder="戒托" />
+	    		<input id="laidian" type="button" value="来店预约" />
+	    		<img src="images/shousuo.jpg" />
+	        </div>
+	   </div>
+	    <!--登录-->
+	    <div class="zhuce">
+	    	<div class="zhuce_left">
+	    		<img src="images/denglu1_02.png" />
+	    	</div>
+	    	<div class="zhuce_right">
+	    		<div class="zhuce_righttop" ><p><a href="#">欢迎 登录</a></p> <span><a style="color: red;" href="zhuce.html">去注册</a></span><i><a href="#">请登录</a></i></div>
+	    		<div class="zhuce_rightbottom" id="zhuce_rightbottom">
+	    			<input type="text" placeholder="请输入手机号" />
+	    			<input type="password" placeholder="请输入密码" /><br />
+	    			<span id="span1" style="display: block; margin-top: 2px;"></span>
+	    			<input type="checkbox" checked="checked" style="margin: 30px 0;" /><span style="margin-left: 10px;">自动登录</span>
+	    			<span style="margin-left: 180px;">忘记密码</span><br />
+	    			<input id="bnt" type="button" value="登录" />
+	    			
+	    			 <div class="boxbox">
+	    			 	<a href="#"><div class="qq"></div></a>
+	    			 	<a href="#"><div class="weixin"></div></a>
+	    			 	<a href="#"><div class="xinlang"></div></a>
+	    			 	<a href="#"><div class="zhifubao"></div></a>
+	    			 </div>
+	    			
+	    			
+	    		</div>
+	    	</div>
+	    </div>
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    <!--尾部-->
+	<div class="foot">
+		<a href="#"><div class="foot_top"></div></a>
+		<div class="foot_center">
+			<div><img src="images/logo85x90.jpg"/></div>
+			<div>
+				<a href="#">关于我们</a>
+				<a href="#">品牌简介</a>
+				<a href="#">诚聘贤才</a>
+				<a href="#">市场合作</a>
+				<a href="#">联系我们</a>
+				<a href="#">商务加盟</a>
+			</div>
+			<div>
+				<a href="#">购物指南</a>
+				<a href="#">购物流程</a>
+				<a href="#">订单处理时</a>
+				<a href="#">订单查询</a>
+				<a href="#">特色商品说明</a>
+			</div>
+			<div>
+				<a href="#">支付方式</a>
+				<a href="#">在线支付</a>
+				<a href="#">货到付款</a>
+				<a href="#">银行汇款</a>
+				<a href="#">海外汇款</a>
+			</div>
+			<div>
+				<a href="#">配送方式</a>
+				<a href="#">体验中心自提</a>
+				<a href="#">全国免费配送</a>
+				<a href="#">海外配送</a>
+				<a href="#">货品包装</a>
+			</div>
+			<div>
+				<a href="#">售后服务</a>
+				<a href="#">售后政策</a>
+				<a href="#">15天退换</a>
+				<a href="#">以小换大</a>
+				<a href="#">优惠换款</a>
+			</div>
+			<div><img src="images/code.jpg"/></div>
+			
+		</div>
+		<div class="tel">
+			<a href="#">
+				<img src="images/f111_01.png" />
+			</a>
+		</div>
+		<div class="copy">
+		<a href="#">网站地图|</a>	<a href="#">友情链接|</a><a href="#">在线投诉|</a>    沪ICP备08011593号|Copyright © 2002-2017 www.zbird.com  钻石小鸟  All Rights Reserved. 
+		</div>
+		<div class="boli">
+			上海铂利德钻石有限公司     021-26011188
+		</div>
+		<div class="lianjie">
+			<a href="#">南京钻石小鸟</a><span>|</span>
+			<a href="#">天津钻石小鸟</a><span>|</span>
+			<a href="#">西安钻石小鸟</a><span>|</span>
+			<a href="#">重庆北京钻石小鸟</a><span>|</span>
+			<a href="#"> 黑光网</a><span>|</span>
+			<a href="#">中国女装品牌</a><span>|</span>
+			<a href="#">优惠券</a><span>|</span>
+			<a href="#">酒店预订</a><span>|</span>
+			<a href="#">卷皮网</a><span>|</span>
+			<a href="#">还利网</a><span>|</span>
+			<a href="#">买鞋网</a><span>|</span>
+			<a href="#">钻石加盟</a><span>|</span>
+			<a href="#">华夏收藏网</a><span>|</span>
+			<a href="#">翡翠网</a>
+			
+		</div>
+		<div class="beian">
+			<a href="#"><img src="images/fot_certi.gif"/></a>
+			<a href="#"><img src="images/fot_certi_02.jpg"/></a>
+			<a href="#"><img src="images/fot_certi_03.jpg"/></a>
+			<a href="#"><img src="images/fot_certi_04.jpg"/></a>
+			<a href="#"><img src="images/picp_bg.png" style="width: 116px;height: 35px;"/></a>
+		</div>
+	</div>
+	<!--固定定位-->
+	<div class="fixedd" id="fixedd">
+		<a href="#"><img src="images/1.gif" /></a>
+		<a href="#"><img src="images/2.jpg" /></a>
+		<a href="#"><img src="images/3.jpg" /></a>
+		<a href="#"><img src="images/4.jpg" /></a>
+		<a href="#" style="border: none;"><img src="images/5.jpg" /></a>
+		
+	</div>
+	<div class="meinv">
+		<a href="#"><img src="images/img.png" /></a>
+	</div>
+	</body>
+</html>
