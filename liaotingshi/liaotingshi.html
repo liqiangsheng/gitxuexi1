@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .chat{
+        display: none;
+    }
+    .chat-room{
+        padding: 10px;
+        width: 600px;
+        height: 400px;
+        border: 5px solid #ddd;
+        background: lavenderblush;
+        box-sizing: border-box;
+    }
+    .chat-room .left{
+        margin-top: 10px;
+        padding: 10px;
+        background: lightblue;
+        float: left;
+        clear: both;
+    }
+    .chat-room .right{
+        margin-top: 10px;        
+        padding: 10px;        
+        background: lightcoral;
+        float: right;
+        clear: both;        
+    }
+    .handle{
+        width: 600px;
+        display: flex;
+    }
+    .handle input{
+        flex: 1;
+    }
+    .handle button{
+        width: 100px;
+    }
+    </style>
+
+</head>
+<body>
+
+    <div class="login">
+        <input id="user" type="text">
+        <button onclick="loginAction()">登录</button>
+    </div>
+
+
+    <div class="chat">
+        <div class="chat-room">
+            
+
+        </div>
+        <div class="handle">
+            <input id="message" type="text">
+            <button onclick="sendAction()">发送</button>
+        </div>
+        <button onclick="logoutAction()">退出</button>
+    </div>
+
+    <script>
+        var ws = null;
+        var chatroom = document.querySelector('.chat-room');
+        var input = document.querySelector('#message');
+        // 登录
+        function loginAction(){
+            //跟服务器建立连接，告诉服务器用户名
+            // websocket html5提供的对象
+            //WebSocket对象创建完成后，自动建立连接
+            ws = new WebSocket('ws://10.36.141.81:5000');
+            ws.onmessage = wsOnMessage;//接收服务器数据的事件
+            ws.onopen = wsOnOpen;
+            ws.onclose = wsOnClose;
+            ws.onerror = wsOnError;
+        }
+
+        //建立了连接，通信通道打开了
+        function wsOnOpen(){
+            console.log('连接成功了');
+            //告诉服务器用户名
+            var username = document.querySelector('#user').value;
+            ws.send(username);
+            // 显示聊天界面
+            document.querySelector('.login').style.display = 'none';
+            document.querySelector('.chat').style.display = 'block';
+            
+        }
+        //连接关闭了
+        function wsOnClose(){
+            console.log('连接关闭了');            
+            document.querySelector('.login').style.display = 'block';
+            document.querySelector('.chat').style.display = 'none';
+            alert('退出成功');
+            chatroom.innerHTML = '';
+        }
+        // 连接发生了错误
+        function wsOnError(){
+            console.log('连接中断了');            
+            document.querySelector('.login').style.display = 'block';
+            document.querySelector('.chat').style.display = 'none';
+            alert('你掉线了，请重新登录');
+            chatroom.innerHTML = '';
+        }
+
+
+        // 发送信息
+        //按钮发送信息
+        function sendAction(){
+            //获得输入框中的信息，发送给服务器，将信息显示在chatroom的位置
+            chatroom.innerHTML += '<div class="right">'+input.value+'</div>';
+            ws.send(input.value);
+            input.value = '';
+        }
+        //回车键发信息
+        input.onkeyup = function(event){
+            if(event.keyCode == 13){
+                sendAction();
+            }
+        }
+
+        // 接收服务器信息
+        function wsOnMessage(event){
+            //event.data 服务器的数据
+            // 将收到的信息显示在chatroom的位置
+            chatroom.innerHTML += '<div class="left">'+event.data+'</div>';
+
+            console.log('接收到了服务器数据：');
+            console.log(event);
+        }
+
+        // 退出登录
+        function logoutAction(){
+            //断开连接，将聊天室的界面关闭了
+            ws.close();
+            
+        }
+
+
+
+</script>
+
+
+
+<!--
+websocket的使用
+var ws = new Websocket();
+发送信息
+ws.send();
+事件
+ws.onmessage = function //接收服务器数据
+
+ws.onopen = function //聊天通道打开了
+
+ws.onclose = function  //聊天通道关闭了
+
+ws.onerror = function  //连接出错了
+
+
+
+  -->
+    
+</body>
+</html>
